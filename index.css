@@ -1,10 +1,33 @@
+.leftColumn {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+.rightColumn {
+    float: right;
+    width: 50%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both; /* clear the floats after the columns */
+  }
+
+
 #name {
     color: black;
     text-align: center;
 }
 
+div {
+    border: 1px solid black;
+}
+
 img {
     max-height: 25%;
     max-width: 25%;
-    text-align: center;
+    text-align: center; 
 }
